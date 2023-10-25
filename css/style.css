@@ -296,6 +296,10 @@ a:focus {
     background: #f8f9fa;
 }
 
+.dropdown-item :hover{
+    color: #FDBE33;
+}
+
 @media (min-width: 992px) {
     .navbar {
         position: absolute;

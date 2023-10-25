@@ -34,30 +34,37 @@
         }
     });
     
-    $(document).ready(function(){
-        $('#about-us').on('mousedown', function(event){
-            window.location.href= 'about.html';
-        });
-    });
-    $(document).ready(function(){
-        $('#what-we-do').on('mousedown', function(event){
-            window.location.href= 'causes.html';
-        });
-    });
-    $(document).ready(function(){
-        $('#get-involved').on('mousedown', function(event){
-            window.location.href= 'volunteer.html';
-        });
-    });
-    $(document).ready(function(){
-        $('#news-events').on('mousedown', function(event){
-            window.location.href= 'event.html';
-        });
-    });
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
+            $('.child').on('mouseover', function(){
+                $(this).css('color',  "#FDBE33");
+            });
+            $('.child').on('mouseout', function(){
+                $(this).css('color',  "#4a4c70");
+            });
             if ($(window).width() > 992) {
+                        
+            $(document).ready(function(){
+                $('#about-us').on('mousedown', function(event){
+                    window.location.href= 'about.html';
+                });
+            });
+            $(document).ready(function(){
+                $('#what-we-do').on('mousedown', function(event){
+                    window.location.href= 'causes.html';
+                });
+            });
+            $(document).ready(function(){
+                $('#get-involved').on('mousedown', function(event){
+                    window.location.href= 'volunteer.html';
+                });
+            });
+            $(document).ready(function(){
+                $('#news-events').on('mousedown', function(event){
+                    window.location.href= 'event.html';
+                });
+            });
                 $('.navbar .dropdown').on('mouseover', function () {
                     $('.dropdown-toggle', this).trigger('click');
                 }).on('mouseout', function () {
