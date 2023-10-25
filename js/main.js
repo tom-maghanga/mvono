@@ -34,7 +34,26 @@
         }
     });
     
-    
+    $(document).ready(function(){
+        $('#about-us').on('mousedown', function(event){
+            window.location.href= 'about.html';
+        });
+    });
+    $(document).ready(function(){
+        $('#what-we-do').on('mousedown', function(event){
+            window.location.href= 'causes.html';
+        });
+    });
+    $(document).ready(function(){
+        $('#get-involved').on('mousedown', function(event){
+            window.location.href= 'volunteer.html';
+        });
+    });
+    $(document).ready(function(){
+        $('#news-events').on('mousedown', function(event){
+            window.location.href= 'event.html';
+        });
+    });
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -52,6 +71,7 @@
         $(window).resize(toggleNavbarMethod);
     });
 
+ 
     
     // Main carousel
     $(".carousel .owl-carousel").owlCarousel({
