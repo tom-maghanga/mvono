@@ -1,14 +1,14 @@
 /* @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
 
 *
-{
+.contact-body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
 
-section
+.section-contact
 {
     display: flex;
     justify-content: center;
@@ -17,10 +17,10 @@ section
     background-color:  #FDBE33;
 
 }
-section::before
+.contact-section::before
 {
     content: '';
-    position: absolute;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 50%;
