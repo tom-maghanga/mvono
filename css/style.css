@@ -551,6 +551,24 @@ a:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.page-header-1 {
+    position: relative;
+    margin-bottom: 0px;
+    padding: 21px 0 90px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    
+  
+}
+.page-item{
+    background-color: #FDBE33;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+.page-item:hover{
+    color: #000000;
+}
 
 .page-header h2 {
     position: relative;
@@ -570,6 +588,7 @@ a:focus {
     bottom: 0;
     background: #FDBE33;
 }
+
 
 .page-header a {
     background-color: #FDBE33;
