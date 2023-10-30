@@ -114,7 +114,21 @@
         })
     });
     
-    
+      // JavaScript to handle the video modal
+    $('#videoModal').on('show.bs.modal', function (e) {
+        // Get the video source URL from the button data-src attribute
+        var videoSrc = $(e.relatedTarget).data('src');
+        // Set the video source of the iframe in the modal
+        $('#video').attr('src', videoSrc);
+    });
+
+    // Pause the video when the modal is closed
+    $('#videoModal').on('hide.bs.modal', function (e) {
+        // Pause the video by setting the src to an empty string
+        $('#video').attr('src', '');
+    });
+
+
     // Causes carousel
     $(".causes-carousel").owlCarousel({
         autoplay: true,
