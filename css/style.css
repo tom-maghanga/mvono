@@ -2209,6 +2209,10 @@ a:focus {
 .footer .copyright p a:hover {
     color: #FDBE33;
 }
+.row-footer{
+    margin: 2rem;
+    
+}
 
 @media (max-width: 767.98px) {
     .footer .copyright p,
